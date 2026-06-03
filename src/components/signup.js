@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import { supabase } from '../supabaseClient';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './css/auth.css';
 
 function SignUp () {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const navigate = useNavigate();
 
     const handleSignUp = async () => {
         if (password !== confirmPassword) {
@@ -15,7 +14,7 @@ function SignUp () {
             return;
         }
 
-        const { user, error } = await supabase.auth.signUp({
+        const { error } = await supabase.auth.signUp({
             email,
             password,
         });

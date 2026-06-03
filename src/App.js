@@ -3,7 +3,7 @@ import SecondHeader from './components/secondHeader';
 import Main from './components/main';
 import Footer from './components/footer';
 import './App.css';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Login from './components/login';
 import SignUp from './components/signup';
 import Dashboard from './components/dashboard';
