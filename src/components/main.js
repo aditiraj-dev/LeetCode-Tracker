@@ -11,16 +11,22 @@ function Main() {
 
       <section className="mockup-section">
         <span className="section-label">Your dashboard</span>
-        <div className="mockup-placeholder">
-          <span>Screenshot of Dashboard</span>
-        </div>
+        <img
+          className="product-screenshot"
+          src="/screenshots/dashboard_screenshot.png"
+          alt="LeetCode Tracker dashboard showing scheduled reviews"
+          loading="lazy"
+        />
       </section>
 
       <section className="mockup-section">
         <span className="section-label">Log a problem</span>
-        <div className="mockup-placeholder">
-          <span>GIF of logging a problem</span>
-        </div>
+        <img
+          className="product-screenshot"
+          src="/screenshots/logprob_screenshot.png"
+          alt="Demonstration of logging a LeetCode problem"
+          loading="lazy"
+        />
       </section>
 
       <section className="features">
